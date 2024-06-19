@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD3ABF8F-9665-4C03-A4F2-DEB6384AB115}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmpireRuins</RootNamespace>
+    <AssemblyName>EmpireRuins</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastForm.Designer.cs">
+      <DependentUpon>LastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LostForm.Designer.cs">
+      <DependentUpon>LostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewLevelForm.Designer.cs">
+      <DependentUpon>NewLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastForm.resx">
+      <DependentUpon>LastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LostForm.resx">
+      <DependentUpon>LostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewLevelForm.resx">
+      <DependentUpon>NewLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postapocalypse1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ede.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4kd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5lcmdl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7lsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24dk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barrel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bridge1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bridge2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bridge3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decor_Ruins_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decor_Ruins_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Decor_Statue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dmke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dmwkd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grass_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grass_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kkedm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ldk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion_Bas_Relief.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llkdm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_statue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_statue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marker_statue4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushrum6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mushrum7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spikes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torch2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torch3_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torch3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torch3_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\torch3_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden_Barrel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wooden_Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stalagmite4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stalagmite5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stalagnate2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stalagnate3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herb7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{860821f5-53b9-47d7-ad7a-a02717161674}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
